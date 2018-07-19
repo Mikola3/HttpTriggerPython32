@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "file_list": {
+            "matchCondition": {
+                "route": "{*path}"
+            },
+            "backendUri": "https://%WEBSITE_SITE_NAME%.azurewebsites.net/HttpTriggerPython32?file={path}"
+        }
+    }
+}
+
