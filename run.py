@@ -148,7 +148,7 @@ def gimme_page(p=''):
     elif path in files:
         print("i'm in elif")
         page = 'https://%s.blob.core.windows.net/%s/%s' % (storage_name, container_name, path)
-        print("page2=",page)
+        print("page2=",page) # output: 'https://ifilimonau.blob.core.windows.net/test/artifact1.tar.gz'
 #        page = "<h1>Here should be kind of redirect. You shouldn't have seen it! :)</h1>"
 #        result = redirect(download_link, 301)
     else:
